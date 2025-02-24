@@ -1,5 +1,5 @@
 <div>
-    <h2>Lista de la compra | {{mi_nombre}}</h2>
+    <h2>Lista de la compra | {{mi_nombre}} | {{entradaCompras}}</h2>
     <input type="text" #btn placeholder="Nombre de producto.." (keyup.enter)="agregarProducto()"
         [(ngModel)]="productocomprado">
     <button type="button" (click)="agregarProducto()">Añadir</button>

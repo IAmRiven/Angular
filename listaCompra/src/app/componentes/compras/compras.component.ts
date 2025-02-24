@@ -1,4 +1,4 @@
-import { Component, ElementRef, inject, OnInit, ViewChild } from '@angular/core';
+import { Component, ElementRef, inject, Input, OnInit, ViewChild } from '@angular/core';
 import { ComprasService } from '../../servicios/compras.service';
 
 @Component({
@@ -11,12 +11,16 @@ export class ComprasComponent implements OnInit {
   productocomprado: string = "";
   mi_nombre: string = "Juan Antonio Rodríguez Toral"
 
+  @Input() entradaCompras: string = "Soy un mensaje desde el padre";
+
   @ViewChild("btn") boton!: ElementRef;
 
   constructor() { }
 
   ngOnInit() {
     this.listaCompra = this._comprasService.getListaCompras()
+  }
+  ngonDestroy() {
   }
 
   private _comprasService = inject(ComprasService)

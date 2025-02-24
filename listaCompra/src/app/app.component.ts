@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  mensajePadre: string = "Hola, soy un mensaje enviado desde el padre";
+  mensajePadre: string = "Soy un mensaje desde el padre";
 }
