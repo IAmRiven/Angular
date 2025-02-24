@@ -1,0 +1,13 @@
+<div>
+    <h2>Lista de la compra | {{mi_nombre}}</h2>
+    <input type="text" #btn placeholder="Nombre de producto.." (keyup.enter)="agregarProducto()"
+        [(ngModel)]="productocomprado">
+    <button type="button" (click)="agregarProducto()">Añadir</button>
+    <hr>
+    <ul>
+        <li *ngFor="let producto of listaCompra; let i = index">
+            {{producto}}
+            <button type="button" (click)="borrarProducto(i)">{{i}} Borrar</button>
+        </li>
+    </ul>
+</div>
