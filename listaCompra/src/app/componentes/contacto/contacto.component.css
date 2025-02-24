@@ -1,0 +1,27 @@
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+div {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 10px;
+    border: 1px solid #4caf50;
+    border-radius: 10px;
+    flex-direction: column;
+}
+
+div h2 {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+input {
+    padding: 10px 20px 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+}

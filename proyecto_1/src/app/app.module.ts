@@ -3,22 +3,22 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { FormsModule } from '@angular/forms';
-import { ComprasComponent } from './componentes/compras/compras.component';
-import { ContadorComponent } from './componentes/contador/contador.component';
-import { ContactoComponent } from './componentes/contacto/contacto.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { InicioComponent } from './paginas/inicio/inicio.component';
+import { ProductosComponent } from './paginas/productos/productos.component';
+import { ContactoComponent } from './paginas/contacto/contacto.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ComprasComponent,
-    ContadorComponent,
+    InicioComponent,
+    ProductosComponent,
     ContactoComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

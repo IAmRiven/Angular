@@ -1,0 +1,8 @@
+<div>
+    <h2>Formulario de contacto</h2>
+    <form #formContacto="ngForm" (ngSubmit)="enviar()">
+        <input type="text" name="name" id="name" placeholder="Nombre" [(ngModel)]="usuario.nombre">
+        <input type="email" name="email" id="email" placeholder="Correo electrónico" [(ngModel)]="usuario.email">
+        <button type="submit">Enviar</button>
+    </form>
+</div>
