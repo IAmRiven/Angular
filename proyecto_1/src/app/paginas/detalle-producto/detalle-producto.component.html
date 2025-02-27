@@ -1,0 +1,13 @@
+<div class="producto text-center">
+    <div class="producto-imagen">
+        <img src={{this.producto?.image}} alt="" width="500px" height="500px">
+    </div>
+    <div class="producto-informacion">
+        <h2>{{this.producto?.title}}</h2>
+        <p>{{this.producto?.description}}</p>
+        <p>{{this.producto?.category}}</p>
+        <p>{{this.producto?.price}}</p>
+        <button class="btn btn-outline-primary" type="button">Comprar</button>
+    </div>
+    <button type="button" class="btn btn-outline-danger" routerLink="/productos">Volver</button>
+</div>

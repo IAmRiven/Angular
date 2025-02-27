@@ -8,13 +8,15 @@ import { InicioComponent } from './paginas/inicio/inicio.component';
 import { ProductosComponent } from './paginas/productos/productos.component';
 import { ContactoComponent } from './paginas/contacto/contacto.component';
 import { HttpClientModule } from '@angular/common/http';
+import { DetalleProductoComponent } from './paginas/detalle-producto/detalle-producto.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     InicioComponent,
     ProductosComponent,
-    ContactoComponent
+    ContactoComponent,
+    DetalleProductoComponent
   ],
   imports: [
     BrowserModule,
