@@ -1,0 +1,23 @@
+{
+  "name": "node-api",
+  "version": "1.0.0",
+  "description": "Api para nuestra tienda de Angular",
+  "keywords": [
+    "node.js"
+  ],
+  "license": "ISC",
+  "author": "Riven",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "node-api": "file:"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}

@@ -8,7 +8,7 @@ import { IProducto } from '../modelos/producto.modelos';
 })
 export class ApiService {
 
-  private url: string = 'https://fakestoreapi.com/products';
+  private url: string = 'http://localhost:5000/api/productos';
 
   // private _http = inject(HttpClient);
 
