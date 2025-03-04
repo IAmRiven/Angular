@@ -9,6 +9,7 @@ import { ProductosComponent } from './paginas/productos/productos.component';
 import { ContactoComponent } from './paginas/contacto/contacto.component';
 import { HttpClientModule } from '@angular/common/http';
 import { DetalleProductoComponent } from './paginas/detalle-producto/detalle-producto.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { DetalleProductoComponent } from './paginas/detalle-producto/detalle-pro
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

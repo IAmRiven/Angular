@@ -1,1 +1,21 @@
-<p>inicio works!</p>
+
+    <div class="container mt-5 w-25">
+        <form [formGroup]="formulario" (ngSubmit)="enviar()">
+            <div class="mb-3">
+              <label for="name" class="form-label">Username: {{minombre}}</label>
+              <input type="name" class="form-control" id="name" [ngClass]="{'is-invalid':validar('name', 'required')}" formControlName="name">
+              <div class="text-danger" *ngIf="validar('name', 'required')">Nombre obligatorio</div>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="email" [ngClass]="{'is-invalid':validar('email', 'required') || validar('email', 'email')}" formControlName="email">
+              <div class="text-danger" *ngIf="validar('email', 'required')">Correo electrónico obligatorio</div>
+            </div>
+            <div class="mb-3">
+              <label for="password" class="form-label">Password</label>
+              <input type="password" class="form-control" id="password" [ngClass]="{'is-invalid':validar('password', 'required')}" formControlName="password">
+              <div class="text-danger" *ngIf="validar('password', 'required')">Contraseña obligatoria</div>
+            </div>
+            <button type="submit" class="btn btn-primary" [disabled]="this.formulario.invalid">Enviar</button>
+          </form>
+    </div>
