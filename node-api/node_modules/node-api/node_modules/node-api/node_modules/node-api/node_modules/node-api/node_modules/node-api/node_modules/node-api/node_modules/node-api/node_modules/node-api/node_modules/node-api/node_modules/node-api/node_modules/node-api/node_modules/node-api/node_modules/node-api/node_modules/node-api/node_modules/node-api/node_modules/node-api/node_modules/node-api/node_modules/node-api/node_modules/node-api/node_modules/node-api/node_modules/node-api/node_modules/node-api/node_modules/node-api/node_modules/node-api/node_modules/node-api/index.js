@@ -1,14 +1,24 @@
 import express from 'express';
 import fs from 'fs';
 import bodyParser from 'body-parser';
+<<<<<<< HEAD
 import cors from 'cors';
+=======
+>>>>>>> a456875f9aebe15655f10744e467e717d65ad49c
 
 const app = express();
 
 app.use(bodyParser.json());
+<<<<<<< HEAD
 
 app.use(cors());
 
+=======
+app.use((req, res, next) => {
+    res.setHeader("Access-Control-Allow-Origin", "*");
+    next();
+})
+>>>>>>> a456875f9aebe15655f10744e467e717d65ad49c
 
 app.listen(5000, () => {
     console.log('Servidor escuchando en el puerto 5000');
